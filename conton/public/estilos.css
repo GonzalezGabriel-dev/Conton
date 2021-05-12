@@ -1,3 +1,6 @@
+  *{
+    font-family: 'Itim', cursive;
+  }
   .nav{
       position: fixed;
       float: left;
@@ -30,7 +33,12 @@
   .tex{
     text-align: justify;
   }
-  
+  .padd{
+    padding-top: 90px;
+  }
+  .back{
+    background-image: radial-gradient(circle at 100% 0%, #ffffff 0, #ffffff 16.67%, #fff5f7 33.33%, #e6e6e6 50%, #cdd7d4 66.67%, #b7cac2 83.33%, #a5beb2 100%);
+  }
   /*Small devices (landscape phones, 576px and up)*/
   @media (min-width: 576px) { 
     .padd{

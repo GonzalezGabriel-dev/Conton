@@ -1,11 +1,10 @@
-<!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="{{ asset('/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/estilos.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
@@ -44,42 +43,17 @@
             
         </div>
     </nav>
-    <section class="ini back">
-    <div class="container" style="height: 100%;">
-        <div class="row" style="height: 100%;">
-            <div class="col txt mx-auto">
-                <h1 class="fw-bold pt-5 text-uppercase" style="width: 70%;">Mayor seguridad y eficacia, cuidando a tus clientes y a tu negocio</h1>
-            </div>
-            <div class="col centrar d-none d-lg-flex">
-                <img src="./logo.png" width="100%" class="pt-4 " alt="">
-            </div>
-        </div>
-    </div>
-    </section>
-    <section class="ini bg-light" id="conocenos">
-    <div class="container">
-        <div class="row padd">
-            <div class="col-12 centrar pb-1"><h1 class="fw-bold">CONOCENOS</h1></div>
-            <div class="col centrar pt-5">
-                <p class="fw-bold fs-5 tex">CONTON es un contador de personas que registra la capacidad de personas que pueden ingresar en tu negocio, además CONTON te ayuda generando reportes de las visitas diarias, o de cierto mes con la finalidad de que lleves un registro en tu economía, y no solo eso te permite verificar la temperatura y el uso correcto del cubre bocas de cada uno de tus clientes, para una mayor seguridad en cuanto a los temas de salud, cuidando a tus clientes, cuidas tu negocio. </p>  
-            </div>
-            <div class="col centrar d-none d-lg-block pt-5">
-                <img src="./Aforo5.jpg" class="img-fluid" style="border-radius: 50px;" alt="">
-            </div>
-        </div>
-    </div>
-    </section>
     <section class=" ini " id="producto">
     <div class="container">
         <div class="row padd">
             <div class="col-12 centrar pb-1"><h1 class="fw-bold">NUESTRO PRODUCTO</h1></div>
             <div class="col-6">
                 <div class="row">
-                    <div class="col-12 pt-4" style="text-align: center;"><h2 class="fw-bold" style="color:#4334eb">BENEFICIOS</h2></div>
+                    <div class="col-12 pt-4" style="text-align: center;"><h2 class="fw-bold">BENEFICIOS</h2></div>
                     <div class="col-12" style="text-align: justify;">
                         <ul>
-                            <li>Facilitar las tareas de cada trabajador o del encargado. Al ahorrar tiempo para poder realizar otras actividades.</li>
-                            <li class="pt-2">Generación de reportes diarios.</li>
+                            <li>Facilitar las tareas de cada trabajador o del encargado. Al ahorrar tiempo para poder realizar otras actividades</li>
+                            <li class="pt-2">Generación de reportes diarios, verifica quizá las visitas en un mes, diarias, etc. (abarca la parte de la economía, y cierta parte en la seguridad, porque se tendría un reporte de las personas que quizá con temperatura hayan activado la alarma y aparte porque se tendría un reporte de las veces que se excedió el aforo de personas.</li>
                             <li class="pt-2">Mejora en la economía, ya que permite conocer el número de personas  en tiempo real  que visitan un  negocio.</li>
                         </ul>
                     </div>
@@ -87,7 +61,7 @@
             </div>
             <div class="col-6">
                 <div class="row">
-                    <div class="col-12 pt-4" style="text-align: center;"><h2 class="fw-bold" style="color:#4334eb">FUNCIONES</h2></div>
+                    <div class="col-12 pt-4" style="text-align: center;"><h2 class="fw-bold">FUNCIONES</h2></div>
                     <DIV class="col-12">
                         <ol>
                             <li>Medidor de temperatura</li>
@@ -100,54 +74,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12">
-          <div class="row">
-            <div class="col centrar"> <img src="./Aforo1.jpg" class="img-fluid rounded" style="height:200px" alt=""> </div>
-            <div class="col centrar"> <img src="./Aforo3.jpg" class="img-fluid" style="height:200px" alt=""> </div>
-          </div>
-        </div>
     </div>
-    </section>
-    <section class="site-section bg-light" id="section-contact">
-      <div class="container padd">
-        <div class="row">
-
-          <div class="col-md-12 text-center mb-5 site-animate">
-            <h2 class="display-4">CONTACTO</h2>
-          </div>
-
-          <div class="col-md-7 mb-5 site-animate" id="contact">
-            <form action="" method="post">
-              <div class="form-group">
-                <label for="name" class="sr-only">Nombre</label>
-                <input type="text" class="form-control" id="name" placeholder="Nombre">
-              </div>
-              <div class="form-group">
-                <label for="email" class="sr-only">Correo</label>
-                <input type="text" class="form-control" id="email" placeholder="Email">
-              </div>
-              <div class="form-group">
-                <label for="message" class="sr-only">Mensaje</label>
-                <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Escribe tu mensaje"></textarea>
-              </div>
-              <div class="form-group">
-                <input type="submit" class="btn btn-primary btn-lg" value="Enviar mensaje">
-              </div>
-            </form>
-          </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-4 site-animate d-none d-lg-block">
-            <p><img src="./logo.png" alt="" class="img-fluid"></p>
-            <p class="text-black">
-              Dirección: <br> Av. Benito Juárez, #350 <br> Nuevo Casas Grandes, Chihuahua <br> <br>
-              Teléfono: <br> 636 694 65 44 <br> <br>
-              Email: <br> <a href="mailto:info@yoursite.com">info@CONTON.com</a>
-            </p>
-
-          </div>
-          
-        </div>
-      </div>
     </section>
     <!-- END section -->
     <footer class="bg-dark text-center text-white">
@@ -191,7 +118,6 @@
     
     <script src="{{ asset('/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('/jquery-3.5.1.min.js') }}"></script>
-    <script src="{{ asset('/owl.carousel.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         $(document).ready(function(){
@@ -202,7 +128,6 @@
         $('.bton').on('click', function() {
           $('.bton').removeClass("border-bottom border-info")
           $(this).addClass(" border-bottom border-info");
-          $('#collapseExample').collapse('hide');
         });
         
 
