@@ -20,6 +20,7 @@
                 <a href="#conocenos" class="nav-link nov-link active me-2 fw-bold bton">Conocenos</a>
                 <a href="#producto" class="nav-link nov-link active me-2 fw-bold bton">Nuestro Producto</a>  
                 <a href="#section-contact" class="nav-link active me-2 fw-bold bton">Contacto</a>
+                <a href="{{route('login')}}" class="nav-link active me-2 fw-bold bton">Iniciar Sesión</a>
             </nav>
             </div>
             <a class="btn btn-primary d-block d-sm-none d-lg-none" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
