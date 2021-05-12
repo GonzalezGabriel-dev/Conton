@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ asset('/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/estilos.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-    <title>CONTON</title>
+    <title>CONTON 2</title>
 </head>
 <body>
     <nav class="navbar navbar-dark border-bottom sticky-top bg-white">
