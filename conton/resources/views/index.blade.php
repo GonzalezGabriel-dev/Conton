@@ -44,16 +44,18 @@
             
         </div>
     </nav>
-    <section class="ini back">
+    <section class="">
     <div class="container" style="height: 100%;">
-        <div class="row" style="height: 100%;">
+    <h1 class="" style="width: 100%;">Mayor seguridad y eficacia, cuidando a tus clientes y a tu negocio</h1>
+    <img src="./1.png" width="100%" class="pt-4 " alt="">
+        <!-- <div class="row" style="height: 100%;">
             <div class="col txt mx-auto">
                 <h1 class="fw-bold pt-5 text-uppercase" style="width: 70%;">Mayor seguridad y eficacia, cuidando a tus clientes y a tu negocio</h1>
             </div>
             <div class="col centrar d-none d-lg-flex">
                 <img src="./logo.png" width="100%" class="pt-4 " alt="">
             </div>
-        </div>
+        </div> -->
     </div>
     </section>
     <section class="ini bg-light" id="conocenos">
