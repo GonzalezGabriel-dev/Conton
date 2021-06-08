@@ -37,7 +37,7 @@
           </li>
           @if(Auth::user()->level=="cliente")
           <li class="nav-item">
-            <a href="/productos" class="nav-link">
+            <a href="/admin/pedidoCliente" class="nav-link">
               <i class="nav-icon fas fa-boxes"></i>
               <p>
                 Pedidos

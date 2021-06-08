@@ -20,7 +20,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/producto', [App\Http\Controllers\HomeController::class, 'index'])->name('producto');
 Route::group(['prefix'=>'admin','as'=>'admin.'],function(){  
     Route::get('/', [App\Http\Controllers\Admin\AdminController::class,'index']);
@@ -39,4 +39,4 @@ Route::group(['prefix'=>'admin','as'=>'admin.'],function(){
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -18,6 +18,7 @@
       <div class="container-fluid">
         <!-- Small boxes (Stat box) -->
         <div class="row">
+        @if(Auth::user()->level=="admin")
           <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-info">
@@ -63,6 +64,7 @@
             </div>
           </div>
           <!-- ./col -->
+          @endif
         </div>
         <!-- /.row -->
         <!-- Main row -->
