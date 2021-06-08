@@ -12,22 +12,23 @@
   <!-- icheck bootstrap -->
   <link rel="stylesheet" href="{{ asset('/dash/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
   <!-- Theme style -->
+  <link rel="stylesheet" href="{{ asset('/login.css') }}">
   <link rel="stylesheet" href="{{ asset('/dash/dist/css/adminlte.min.css')}}">
 </head>
-<body class="hold-transition login-page">
+<body class="hold-transition login-page fondo">
 <div class="login-box">
   <div class="login-logo">
-    <h2>Tienda</h2>
-   </div>
-  <!-- /.login-logo -->
-  <div class="card">
-    <div class="card-body login-card-body">
-      <p class="login-box-msg">Accede para iniciar tu sesion</p>
-      <div style="display: flex; align-items:center; justify-content:center;">
+  <div style="display: flex; align-items:center; justify-content:center;">
          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_pk7nnxpm.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop  autoplay></lottie-player>
+        <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_ISHFyg.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop  autoplay></lottie-player>
    
       </div>
+   </div>
+  <!-- /.login-logo -->
+  <div class="card border border-white" style="background-color: transparent;">
+    <div class="card-body login-card-body" style="background-color: transparent;">
+      <p class="login-box-msg text">Accede para iniciar tu sesion</p>
+      
       
       <form method="POST" action="{{ route('login') }}">
         @csrf
@@ -56,24 +57,24 @@
           <div class="col-8">
             <div class="icheck-primary">
               <input type="checkbox" id="remember">
-              <label for="remember">
+              <label class="text" for="remember">
                 Recordarme
               </label>
             </div>
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Acceder</button>
+            <button type="submit" class="btn btn-primary btn-block border border-white">Acceder</button>
           </div>
           <!-- /.col -->
         </div>
       </form>
 
       <p class="mb-1">
-        <a href="forgot-password.html">Olvide mi contraseña</a>
+        <a href="#" class="text2">Olvide mi contraseña</a>
       </p>
       <p class="mb-0">
-        <a href="register.html" class="text-center">Registrarme como nuevo usuario</a>
+        <a href="/register" class="text-center text2">Registrarme como nuevo usuario</a>
       </p>
     </div>
     <!-- /.login-card-body -->
