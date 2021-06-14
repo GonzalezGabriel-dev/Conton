@@ -35,8 +35,9 @@ const sr = ScrollReveal({
 
 /*SCROLL HOME*/
 sr.reveal('.home__title',{}); 
-sr.reveal('.button',{delay: 200}); 
+sr.reveal('.button',{delay: 100}); 
 sr.reveal('.home__img',{delay: 400}); 
+sr.reveal('.home__data',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 
 /*SCROLL ABOUT*/
@@ -45,16 +46,16 @@ sr.reveal('.about__subtitle',{delay: 400});
 sr.reveal('.about__text',{delay: 400}); 
 
 /*SCROLL product*/
-sr.reveal('.product__subtitle',{}); 
-sr.reveal('.product__text',{}); 
-sr.reveal('.product__data',{interval: 200}); 
-sr.reveal('.product__img',{delay: 600});
+sr.reveal('.product__subtitle',{delay: 200}); 
+sr.reveal('.product__text',{delay: 200}); 
+sr.reveal('.product__data',{delay: 200}); 
+sr.reveal('.product__img',{delay: 200});
 
 /*SCROLL sesion*/
 sr.reveal('.sesion__img',{interval: 200}); 
 
 /*SCROLL CONTACT*/
-sr.reveal('.contact__input',{interval: 200}); 
+sr.reveal('.contact__container',{delay: 200}); 
 
 
 

@@ -21,7 +21,7 @@
 <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <a href="#" class="nav__logo" style="right:150px;">   <img class="" style="width: 40px; height: 50px;" src="assets/img/logo2.png" alt=""></a>
+                    <a href="#" class="nav__logo" style="right:150px;">   <img class="" style="width: 130px; height: 50px;" src="assets/img/logo.png" alt=""></a>
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
@@ -82,20 +82,36 @@
 
                 <div class="product__container bd-grid">          
                     <div>
-                        <h2 class="product__subtitle">Beneficios</h2>
-                        <div class="col-12" style="text-align: justify; " >
+                         <h2 class="product__subtitle">Beneficios</h2>
+                        <div class="product__text" style="text-align: justify; " >
                             <ol>
                                 <li class="pt-2">Facilitar las tareas de cada trabajador o del encargado, al ahorrar tiempo para poder realizar otras actividades.</li>
                                 <li class="pt-2">Generación de reportes diarios.</li>
                                 <li class="pt-2">Mejora en la economía, ya que permite conocer el número de personas  en tiempo real  que visitan un  negocio.</li>
+                                
                             </ol>
                         </div>
                         <img src="assets/img/Aforo1.jpg" alt="" class="product__img">
                     </div>
+                    <div>
+                    <br>
+                    <br>
                     
-                    <div class="col-12" style="text-align: justify; ">  
-                        <h2 class="product__subtitle" >Funciones</h2>
-                        <DIV class="col-12">
+                         <h2 class="product__subtitle">Funciones</h2>
+                        <div class="product__text" style="text-align: justify; " >
+                        <ol>
+                                <li class="pt-2">Medidor de temperatura</li>
+                                <li class="pt-2">Señal de alarmas</li>
+                                <li class="pt-2">Verifica el uso de cubre bocas</li>
+                                <li class="pt-2">Contador de personas</li>
+                                <li class="pt-2">Dispensador de gel antibacterial</li>
+                            </ol>
+                        </div>            
+                        <img src="assets/img/Aforo3.jpg" alt="" class="product__img">
+                    </div>
+                    <!-- <div >  
+                        <h2 class="product__subtitle">Funciones</h2>
+                        <div class="product__text" style="text-align: justify; " >
                             <ol>
                                 <li class="pt-2">Medidor de temperatura</li>
                                 <li class="pt-2">Señal de alarmas</li>
@@ -103,9 +119,9 @@
                                 <li class="pt-2">Contador de personas</li>
                                 <li class="pt-2">Dispensador de gel antibacterial</li>
                             </ol>
-                        </DIV>            
+                        </div>            
                         <img src="assets/img/Aforo3.jpg" alt="" class="product__img">
-                    </div>
+                    </div> -->
                 </div>
             </section>
 
@@ -126,6 +142,8 @@
                 <label for="message" class="sr-only">Mensaje</label>
                 <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Escribe tu mensaje"></textarea>
               </div>
+              <br>
+             
               <div class="form-group">
                 <input type="submit" class="btn btn-primary btn-lg" value="Enviar mensaje">
               </div>
