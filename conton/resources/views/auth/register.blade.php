@@ -19,10 +19,10 @@
 <div class="register-box">
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <a href="../../index2.html" class="h1"><b>CONTON</b></a>
+      <a href="../../index2.html" class="h1"><img class="" style="width: 130px; height: 50px;" src="assets/img/logo.png" alt=""></a>
     </div>
     <div class="card-body">
-      <p class="login-box-msg">Registrarme como nuevo usuario</p>
+      <h4>Registrese</h4>
 
       <form method="POST" action="{{ route('register') }}">
       @csrf

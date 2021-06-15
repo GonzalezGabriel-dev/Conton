@@ -45,7 +45,12 @@
             <section class="home bd-grid" id="home">
                 <div class="home__data" class="col-12">
                     <h1 style="font-size: xx-large;"><br>Mayor seguridad y eficacia,<br>cuidando a tus clientes y<br> a tu negocio</h1>
-
+                    <div class="form-group">
+                    <br>
+                    <br>
+                    <br>
+                    <a href="{{route('register')}}"> <input type="submit" class="btn btn-primary btn-lg" value="¡Comience ahora!"></a>
+              </div>
                     
                 </div>
 

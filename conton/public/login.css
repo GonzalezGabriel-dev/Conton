@@ -1,8 +1,8 @@
 
 .fondo{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 60%, rgba(9,9,121,1) 89%); 
-  }
+  background: rgb(42,34,181);
+  background: linear-gradient(90deg, rgba(42,34,181,1) 0%, rgba(91,91,217,1) 42%, rgba(0,212,255,1) 100%);
+ }
   
   .text{
     color: black;
