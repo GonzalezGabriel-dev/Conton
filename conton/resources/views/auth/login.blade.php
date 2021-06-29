@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Log in</title>
 
+  <title>CONTON</title>
+<link rel="shortcut icon" href="{{ asset('/assets/img/logo2.png') }}" />
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -15,21 +16,15 @@
   <link rel="stylesheet" href="{{ asset('/login.css') }}">
   <link rel="stylesheet" href="{{ asset('/dash/dist/css/adminlte.min.css')}}">
 </head>
-<body class="hold-transition login-page fondo">
-<div class="login-box">
-  <div class="login-logo">
-  <div style="display: flex; align-items:center; justify-content:center;">
-         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_ISHFyg.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop  autoplay></lottie-player>
-   
-      </div>
-   </div>
-  <!-- /.login-logo -->
-  <div class="card border border-white" style="background-color: transparent;">
-    <div class="card-body login-card-body" style="background-color: transparent;">
-      <p class="login-box-msg text">Accede para iniciar tu sesion</p>
-      
-      
+<body class="hold-transition register-page fondo">
+<div class="register-box">
+  <div class="card card-outline card-primary">
+    <div class="card-header text-center">
+      <a href="../../index2.html" class="h1"><img class="" style="width: 130px; height: 50px;" src="assets/img/logo.png" alt=""></a>
+    </div>
+    <div class="card-body">
+      <p class="login-box-msg">Iniciar Sesión</p>
+
       <form method="POST" action="{{ route('login') }}">
         @csrf
         <div class="input-group mb-3">

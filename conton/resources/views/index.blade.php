@@ -44,7 +44,7 @@
         
             <section class="home bd-grid" id="home">
                 <div class="home__data" class="col-12">
-                    <h1 style="font-size: xx-large;"><br>Mayor seguridad y eficacia,<br>cuidando a tus clientes y<br> a tu negocio</h1>
+                    <p style="font-size: xx-large;">Un dispositivo para mayor seguridad y eficacia,cuidando a sus clientes y a su negocio</p>
                     <div class="form-group">
                     <br>
                     <br>

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Log in</title>
-
+  <title>CONTON</title>
+  <link rel="shortcut icon" href="{{ asset('/assets/img/logo2.png') }}" />
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -22,7 +22,7 @@
       <a href="../../index2.html" class="h1"><img class="" style="width: 130px; height: 50px;" src="assets/img/logo.png" alt=""></a>
     </div>
     <div class="card-body">
-      <h4>Registrese</h4>
+      <p class="login-box-msg">Registrarme como nuevo usuario</p>
 
       <form method="POST" action="{{ route('register') }}">
       @csrf
