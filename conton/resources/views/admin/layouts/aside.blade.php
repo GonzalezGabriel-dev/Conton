@@ -45,7 +45,15 @@
           </li>
           @if(Auth::user()->level=="cliente")
           <li class="nav-item">
-            <a href="/admin/pedidoCliente" class="nav-link" style="color: white">
+            <a href="{{url('admin/comprar')}}" class="nav-link" style="color: white">
+              <i class="nav-icon fas fa-store"></i>
+              <p>
+                Comprar
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{url('admin/pedidoCliente')}}" class="nav-link" style="color: white">
               <i class="nav-icon fas fa-boxes"></i>
               <p>
                 Pedidos
@@ -55,7 +63,7 @@
           @endif
           @if(Auth::user()->level=="admin")
           <li class="nav-item">
-            <a href="admin/productos" class="nav-link" style="color: white">
+            <a href="{{url('admin/productos')}}" class="nav-link" style="color: white">
               <i class="nav-icon fas fa-clipboard-list"></i>
               <p>
                 Productos
@@ -63,7 +71,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="admin/pedidos" class="nav-link" style="color: white">
+            <a href="{{url('admin/pedidos')}}" class="nav-link" style="color: white">
             <i class="nav-icon fas fa-store"></i>
               <p>
                 Pedidos
@@ -71,7 +79,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="admin/ventas" class="nav-link" style="color: white">
+            <a href="{{url('admin/ventas')}}" class="nav-link" style="color: white">
             <i class="nav-icon fas fa-boxes"></i>
               <p>
                 Ventas
@@ -79,10 +87,18 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="admin/usuarios" class="nav-link" style="color: white">
+            <a href="{{url('admin/usuarios')}}" class="nav-link" style="color: white">
               <i class="nav-icon fas fa-user"></i>
               <p>
                 Usuarios
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{url('admin/clientes')}}" class="nav-link" style="color: white">
+              <i class="nav-icon fas fa-user"></i>
+              <p>
+                Clientes
               </p>
             </a>
           </li>

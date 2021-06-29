@@ -4,14 +4,11 @@
         <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-            <h1 class="m-0">Ventas</h1>
+            <h1 class="m-0">Mis pedidos</h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-                <li class="breadcrumb-item">
-                    <a class="btn btn-outline-primary btn-sm" target="_blank" href="{{url('admin/generarPDF')}}">
-                       <i class="fa fa-print"></i> Generar PDF</a>
-                </li>
+                
             </ol>
             </div><!-- /.col -->
         </div><!-- /.row -->
@@ -43,8 +40,14 @@
                 <td>{{$p->name}}</td>
                 <td>{{$p->name_client}}</td>
                 <td>{{$p->quantity}}</td>
-                <td>{{$p->amount}}</td>
+                <td>${{$p->total}}</td>
                 <td>{{$p->date}}</td>
+                <td><button class="btn btn-danger btn-eliminar" title="Cancelar pedido" data-id="{{$p->id}}" data-toggle="modal" data-target="#modal-delete"><i class="fa fa-trash"></i></button>
+                <form action="{{ url('/admin/pedidosCliente',['id'=>$p->id])}}" method="POST" id="formEliminar_{{ $p->id}}">
+                @csrf
+                <input type="hidden" name="id" value="{{$p->id}}">
+                <input type="hidden" name="_method" value="delete">
+                </form>
                 </td>
               </tr>
               @endforeach
@@ -53,7 +56,28 @@
         </div>
       </div>
     </div>
-
+    <div class="modal fade" id="modal-delete">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Cancelar pedido</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h2 class="h6">Desea cancelar el producto</h2>
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+              <button type="submit" class="btn btn-danger btnCloseEliminar">Cancelar</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->  
 @endSection
 @section('script')
   <script>
@@ -73,20 +97,27 @@
       $(".btn-editar").click(function(){
         var id=$(this).data('id');
         var name=$(this).data('nombre');
-        var description=$(this).data('descripcion');
-        var precio=$(this).data('price');
-        var stock=$(this).data('stock');
-        var tags=$(this).data('tags');
+        var cliente=$(this).data('clienten');
+        var clientes=$(this).data('cliente');
+        var producto=$(this).data('producto');
+        var cantidad=$(this).data('cantidad');
+        var total=$(this).data('total');
+        var fecha=$(this).data('fecha');
         $("#idEdit").val(id);
+        $("#idClient").val(clientes);
+        $("#idProduct").val(producto);
         $("#nameEdit").val(name);
-        $("#descriptionEdit").val(description);
-        $("#priceEdit").val(precio);
-        $("#stockEdit").val(stock);
-        $("#tagsEdit").val(tags);
+        $("#descriptionEdit").val(cliente);
+        $("#priceEdit").val(total);
+        $("#priceEdit1").val(total);
+        $("#stockEdit").val(cantidad);
+        $("#stockEdit1").val(cantidad);
+        $("#fecha").val(fecha);
+        $("#fecha1").val(fecha);
       })
       $(".btnCloseEliminar").click(function(){
         console.log("Funciona");
-        //$("#formEliminar_"+idEliminar).submit();
+        $("#formEliminar_"+idEliminar).submit();
       });
     });
   </script>

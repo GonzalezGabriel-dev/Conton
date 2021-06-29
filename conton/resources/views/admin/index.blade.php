@@ -12,7 +12,7 @@
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
-
+    
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
@@ -23,14 +23,14 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>0</h3>
+                <h3>{{$total}}</h3>
 
                 <p>Nuevos Pedidos</p>
               </div>
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
-              <a href="#" class="small-box-footer">Mostrar <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="{{url('admin/pedidos')}}" class="small-box-footer">Mostrar <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -38,14 +38,14 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>0</h3>
+                <h3>{{$total3}}</h3>
 
                 <p>Nuevos Clientes</p>
               </div>
               <div class="icon">
                 <i class="ion ion-person-add"></i>
               </div>
-              <a href="#" class="small-box-footer">Mostrar <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="{{url('admin/clientes')}}" class="small-box-footer">Mostrar <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -53,14 +53,14 @@
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>0</h3>
+                <h3>{{$total2}}</h3>
 
                 <p>Ventas Realizadas</p>
               </div>
               <div class="icon">
                 <i class="ion ion-pie-graph"></i>
               </div>
-              <a href="#" class="small-box-footer">Mostrar <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="{{url('admin/ventas')}}" class="small-box-footer">Mostrar <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->

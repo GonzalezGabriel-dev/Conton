@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="{{ asset('/login.css') }}">
   <link rel="stylesheet" href="{{ asset('/dash/dist/css/adminlte.min.css')}}">
 </head>
-<body class="hold-transition register-page fondo">
+<body class="hold-transition register-page">
 <div class="register-box">
   <div class="card card-outline card-primary">
     <div class="card-header text-center">

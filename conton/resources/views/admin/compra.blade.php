@@ -4,7 +4,7 @@
         <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-            <h1 class="m-0">Pedidos</h1>
+            <h1 class="m-0">Comprar</h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -14,49 +14,56 @@
         </div><!-- /.row -->
         </div><!-- /.container-fluid -->
     </div>
-    <div class="content">
-      <div class="container-fluid">
-        <div class="row">
-        @if($message=Session::get('Listo'))
+    
+    @if($message=Session::get('Listo'))
                 <div class="alert alert-success alert-dismissable fade show col-12" role="alert">
                   <h5>Listo:</h5>
                   <p>{{$message}}</p>
                 </div>
           @endif
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Producto </th>
-                <th>Cliente</th>
-                <th>Cantidad</th>
-                <th>Total</th>
-                <th>Fecha</th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody>
-              @foreach($order as $p)
-              <tr>
-                <td>{{$p->name}}</td>
-                <td>{{$p->name_client}}</td>
-                <td>{{$p->quantity}}</td>
-                <td>{{$p->total}}</td>
-                <td>{{$p->date}}</td>
-                <td><button class="btn btn-danger btn-eliminar" title="Eliminar pedido" data-id="{{$p->id}}" data-toggle="modal" data-target="#modal-delete"><i class="fa fa-trash"></i></button>
-                <button class="btn btn-primary btn-editar" title="Enviar" data-id="{{$p->id}}" data-nombre="{{$p->name}}" data-producto="{{$p->id_product}}" data-cliente="{{$p->id_client}}" data-clienten="{{$p->name_client}}" data-cantidad="{{$p->quantity}}" data-total="{{$p->total}}" data-fecha="{{$p->date}}" data-toggle="modal" data-target="#modal-edit"><i class="fa fa-check"></i></button>
-                <form action="{{ url('/admin/pedidos',['id'=>$p->id])}}" method="POST" id="formEliminar_{{ $p->id}}">
-                @csrf
-                <input type="hidden" name="id" value="{{$p->id}}">
-                <input type="hidden" name="_method" value="delete">
-                </form>
-                </td>
-              </tr>
-              @endforeach
-            </tbody>
-          </table>
+      <!-- Default box -->
+      <div class="card card-solid">
+        <div class="card-body pb-0">
+          <div class="row">
+          @foreach($producto as $p)
+            <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column">
+              <div class="card bg-light d-flex flex-fill">
+
+                <div class="card-body pt-0">
+                  <div class="row">
+                    <div class="col-7 pt-4">
+                      <h2 class="lead"><b>{{$p->name}}</b></h2>
+                      <p class="text-muted text-sm"><b>Precio: </b>{{$p->price}}</p>
+                    </div>
+                    <div class="col-5 text-center pt-4">
+                      <img src="{{asset('img/productos/'.$p->image)}}" alt="user-avatar" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="text-right">
+                    <a href="{{url('admin/compra?id='.$p->id)}}" class="btn btn-md btn-primary">
+                       Ver producto
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            @endforeach
         </div>
+        
+        <!-- /.card-body -->
+        
+        <!-- /.card-footer -->
       </div>
-    </div>
+      </div>
+      <!-- /.card -->
+
+    
+
+     
+
+    
     <!--Modal Editar-->
     <div class="modal fade" id="modal-edit">
         <div class="modal-dialog">
@@ -142,6 +149,16 @@
       <!-- /.modal -->  
 @endSection
 @section('script')
+<script>
+$(document).ready(function() {
+    $('.product-image-thumb').on('click', function () {
+      var $image_element = $(this).find('img')
+      $('.product-image').prop('src', $image_element.attr('src'))
+      $('.product-image-thumb.active').removeClass('active')
+      $(this).addClass('active')
+    })
+  })
+  </script>
   <script>
     var idEliminar=-1;
     $(document).ready(function(){
