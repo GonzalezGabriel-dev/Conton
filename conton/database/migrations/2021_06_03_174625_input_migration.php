@@ -13,7 +13,7 @@ class InputMigration extends Migration
      */
     public function up()
     {
-        Schema::create('input', function (Blueprint $table) {
+        Schema::create('inputs', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->string('description');
@@ -32,6 +32,6 @@ class InputMigration extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('input');
+        Schema::dropIfExists('inputs');
     }
 }

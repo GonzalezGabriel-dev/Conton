@@ -13,7 +13,7 @@ class OrderDetailsMigration extends Migration
      */
     public function up()
     {
-        Schema::create('sale_detail', function (Blueprint $table) {
+        Schema::create('sale_details', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('id_product')->unsigned();
             $table->integer('id_client')->unsigned();
@@ -33,6 +33,6 @@ class OrderDetailsMigration extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sale_detail');
+        Schema::dropIfExists('sale_details');
     }
 }
